@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', sans-serif;
+}
+.one{
+    height: 150px;
+    max-width: 1200px;
+   position: relative;
+   background-color: rgb(200, 195, 204);
+   display: flex;
+   justify-content: space-between;
+}
+.logo img{
+    width: 160px; 
+    justify-content: flex-start;
+}
+nav{
+    display: flex;
+    gap: 2rem;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(26, 23, 23);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.burger{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.button a{
+    text-decoration: none;
+     background-color: azure;
+    color: black;
+    cursor: pointer;
+    border: 1px solid azure;
+    outline: none;
+    font-weight: bold;
+    border-radius: 3px;
+
+}
+.button a:hover{
+    background-color: rgb(184, 237, 87);
+}
+.menu{
+    display: none;
+}
+nav li:hover .menu{
+    display: list-item;
+    position: absolute;
+    z-index: 1000;
+}
+nav li:hover{
+    background-color: rgb(184, 237, 87);
+}
+ul li.active a{
+    background-color: rgb(184, 237, 87);
+}
+.menu li a{
+    text-align: center;
+    font-size: 17px;
+    width: 270px;
+    color: #444;
+}
+.menu li {
+    display: block;
+}
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    width: 100%;
+    padding: 60px 0;
+    margin-top: 60px;
+}
+.col-2 h1{
+    font-size: 80px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: rgb(41, 160, 47);
+    color: aliceblue;
+    border-radius: 30px;
+    margin-top: 80px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.col-2 a:hover{
+    background: #022b12cc;
+}
+p{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: dimgrey;
+    text-align: center;
+}
+.header-section{
+    margin-top: -20px;
+    background: radial-gradient(#fff, #eaf2fb);
+}
+
+/* style de la section categories */
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3 img{
+    width: 100%;
+}
+.container h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #444;
+    margin: 30px 0;
+}
+
+/* section des autres produits */
+.col-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+    transition: transform 0.4s;
+}
+.col-4 img{
+    width: 100%;
+}
+.col-4:hover{
+transform: translateY(-10px);
+}
+/* burger-menu */
+.burger-menu{
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    width: 90px;
+    overflow: hidden;
+    backdrop-filter: blur(15);
+}
+.burger-menu.open {
+    height: 140px;
+}
+.burger-menu-button{
+    display: none;
+}
+.burger-menu ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: space-between;
+    color: hwb(0 96% 4% / 0.908);
+}
+.button-burger-menu a{
+    font-size: 12px;
+    text-decoration: none;
+     background-color: rgb(191, 204, 204);
+    color: black;
+    cursor: pointer;
+    border: 1px solid rgb(97, 152, 152);
+    outline: none;
+    font-weight: bold;
+    border-radius: 3px;
+    display: flex;
+    justify-content:center;
+}
+.burger-menu a:hover {
+    background-color: hsl(61, 55%, 51%);
+}
+.button-burger-menu a:hover {
+    background-color: hsl(61, 55%, 51%);
+}
+.burger-menu li {
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media all and (max-width: 890px) {
+    .menu1 {
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+    .burger-menu-button {
+        display: block;
+    }
+    .menu2 {
+        display: block;
+    }
+    .menu2 li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger {
+        display: block;
+    }
+    .logo img {
+        width: 70px;
+    }
+    .col-2 {
+        min-width: 100px;
+    }
+    .col-2 h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+    .col-2 p {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .col-2 a {
+        font-size: 10px;
+    }
+    .col-3 img {
+        width: 60%;
+    }
+    .container h2 {
+        font-size: 1.3rem;
+   }
+   .burger-menu {
+    display: block;
+   }
+   .menu li a {
+    margin-right: 8rem;
+    font-size: 12px;
+   }
+  
+.localisation{
+    background-color: #524646;
+    color: #e4dddd;
+}
+.localisation p{
+    text-align: left;
+} 
+}
