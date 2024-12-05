@@ -277,11 +277,21 @@ transform: translateY(-10px);
     font-size: 15px;
     }
     .localisation {
-    background-color: #524646;
-    color: #e4dddd;
+    background-color: #ddcbcb;
+    color: #b25555;
+    }
+    .localisation h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+    .localisation h2 {
+        text-align: center;
+        font-size: 20px;
     }
     .localisation p{ 
-    text-align: left;
+    text-align: justify;
+    font-size: 15px;
+    color: #0a0a0a;
     }
 
     .one {
